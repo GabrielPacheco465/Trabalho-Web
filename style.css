@@ -1,0 +1,163 @@
+header {
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.logo img {
+    width: 100px;
+    height: 70px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: #333;
+}
+
+.imagem-principal { 
+width: 300px; 
+margin: 30px; 
+}
+
+.botao {
+    display: inline-block;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #0011ff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* ============================= */
+/* PÁGINA DE CONTATO             */
+/* ============================= */
+
+.pagina-contato {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+.pagina-contato h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+
+/* Cartões de contato */
+
+.contato-card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.contato-card h2 {
+    margin-top: 0;
+
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+.contato-card p {
+    font-family: Arial, sans-serif;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Links */
+
+.contato-card a {
+    color: #b8860b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contato-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* Botões */
+
+.botao-contato {
+    display: inline-block;
+
+    background-color: #111;
+    color: white !important;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+.botao-contato:hover {
+    background-color: #d4af37;
+    color: #111 !important;
+
+    text-decoration: none !important;
+}
