@@ -161,3 +161,43 @@ footer p {
 
     text-decoration: none !important;
 }
+
+/* ============================= */
+/* PÁGINA DE VEÍCULOS            */
+/* ============================= */
+
+.pagina-veiculo{
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+.pagina-veiculo h1{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.veiculo{
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.veiculo img{
+    width: 200px;
+    height: auto;
+}
+
+.veiculo h2{
+    margin-top: 0;
+
+    font-family: Arial, sans-serif;
+    color: #222;
+}
