@@ -1,3 +1,93 @@
+.inicio {
+    height: calc(100vh - 80px);
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("carro.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* CONTEÚDO */
+
+.conteudo {
+    max-width: 900px;
+}
+
+
+/* FRASE PRINCIPAL */
+
+.conteudo h1 {
+    font-size: 65px;
+
+    margin: 0;
+
+    font-weight: bold;
+}
+
+
+/* TEXTO */
+
+.conteudo p {
+    font-size: 22px;
+
+    margin: 25px 0;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+
+    background-color: #d4af37;
+
+    color: #111;
+
+    text-decoration: none;
+
+    padding: 14px 30px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: white;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #111;
+
+    text-align: center;
+
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 14px;
+}
+
 header {
     height: 100px;
     background-color: #ffffff;
@@ -53,8 +143,8 @@ margin: 30px;
 }
 
 footer {
-    background-color: #0011ff;
-    color: white;
+    background-color: white;
+    color: rgb(0, 0, 0);
     padding: 20px 0;
     text-align: center;
 }
