@@ -1,31 +1,281 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós</title>
+
+    <title>GP Motors - Sobre Nós</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Fonte Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
+
+
 <body>
 
-        <!-- Cabeçalho -->
-        <header>
+    <!-- CABEÇALHO -->
 
-            <div class="logo">
-                <img src="GPMOTORS.png" alt="GP Motors">
+    <header>
+
+        <div class="logo">
+
+            <img src="GPMOTORS.png" alt="Logo GP Motors">
+
+        </div>
+
+
+        <nav>
+
+            <a href="Trabalho.html">Início</a>
+
+            <a href="veiculos.html">Veículos</a>
+
+            <a href="sobre.html" class="pagina-atual">Sobre</a>
+
+            <a href="contato.html">Contato</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- HISTÓRIA DA GP MOTORS -->
+
+    <main>
+
+        <section class="historia">
+
+            <div class="texto-historia">
+
+                <h1>
+                    SOBRE A
+                    <span>GP MOTORS</span>
+                </h1>
+
+                <p>
+                    A GP Motors nasceu da paixão por veículos e do
+                    compromisso em oferecer qualidade, confiança e
+                    atendimento transparente para nossos clientes.
+                </p>
+
+                <p>
+                    Mais do que vender carros, queremos proporcionar
+                    uma boa experiência e construir relacionamentos
+                    que vão além da compra.
+                </p>
+
             </div>
-    
-            <nav>
-                <a href="Trabalho.html">Início</a>
-                <a href="veiculos.html">Veículos</a>
-                <a href="sobre.html">Sobre nós</a>
-                <a href="contato.html">Contato</a>
-            </nav>
-    
-        </header>
-    
-    
+
+        </section>
+
+
+
+        <!-- MISSÃO, VISÃO E VALORES -->
+
+        <section class="informacoes">
+
+            <div class="info">
+
+                <h2>Nossa Missão</h2>
+
+                <p>
+                    Oferecer veículos de qualidade e um atendimento
+                    transparente, proporcionando uma boa experiência
+                    para nossos clientes.
+                </p>
+
+            </div>
+
+
+            <div class="info">
+
+                <h2>Nossa Visão</h2>
+
+                <p>
+                    Ser referência na venda de veículos, reconhecida
+                    pela confiança e qualidade no atendimento.
+                </p>
+
+            </div>
+
+
+            <div class="info">
+
+                <h2>Nossos Valores</h2>
+
+                <ul>
+
+                    <li>Transparência</li>
+
+                    <li>Qualidade</li>
+
+                    <li>Confiança</li>
+
+                    <li>Respeito ao cliente</li>
+
+                    <li>Compromisso</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FORMULÁRIO DE OPINIÃO -->
+
+        <section class="opiniao">
+
+            <div class="texto-opiniao">
+
+                <h2>
+                    SUA OPINIÃO
+                    <span>É MUITO IMPORTANTE</span>
+                </h2>
+
+                <p>
+                    Queremos sempre melhorar para oferecer o melhor
+                    para você. Deixe sua opinião, sugestão ou crítica.
+                </p>
+
+                <p>
+                    Sua participação faz a diferença!
+                </p>
+
+            </div>
+
+
+
+            <form>
+
+                <label for="nome">Nome</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Seu nome"
+                >
+
+
+                <label for="email">E-mail</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Seu e-mail"
+                >
+
+
+                <label for="assunto">Assunto</label>
+
+                <select id="assunto" name="assunto">
+
+                    <option value="">
+                        Selecione um assunto
+                    </option>
+
+                    <option value="elogio">
+                        Elogio
+                    </option>
+
+                    <option value="sugestao">
+                        Sugestão
+                    </option>
+
+                    <option value="reclamacao">
+                        Reclamação
+                    </option>
+
+                    <option value="outro">
+                        Outro
+                    </option>
+
+                </select>
+
+
+                <label for="mensagem">Sua mensagem</label>
+
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    placeholder="Escreva aqui sua opinião..."
+                ></textarea>
+
+
+                <button type="submit">
+                    Enviar opinião
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <img src="GPMOTORS.png" alt="GP Motors">
+
+        </div>
+
+
+        <div>
+
+            <p>
+                Rua Exemplo, 123
+            </p>
+
+            <p>
+                Guarapuava - PR
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                (42) 99999-9999
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                contato@gpmotors.com.br
+            </p>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 GP Motors. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
 </body>
+
 </html>

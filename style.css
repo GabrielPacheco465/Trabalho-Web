@@ -192,7 +192,7 @@ footer p {
 /* Cartões de contato */
 
 .contato-card {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     padding: 25px;
     margin-bottom: 20px;
 
@@ -205,7 +205,7 @@ footer p {
     margin-top: 0;
 
     font-family: Arial, sans-serif;
-    color: #222;
+    color: #ffffff;
 }
 
 .contato-card p {
@@ -218,7 +218,7 @@ footer p {
 /* Links */
 
 .contato-card a {
-    color: #b8860b;
+    color: #d4af37;
     text-decoration: none;
     font-weight: bold;
 }
@@ -233,7 +233,7 @@ footer p {
 .botao-contato {
     display: inline-block;
 
-    background-color: #111;
+    background-color: #d4af37;
     color: white !important;
 
     padding: 12px 20px;
@@ -256,38 +256,370 @@ footer p {
 /* PÁGINA DE VEÍCULOS            */
 /* ============================= */
 
+body {
+    margin: 0;
+
+    background-image: url("fundo-veiculos.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    background-repeat: no-repeat;
+}
+
 .pagina-veiculo{
     max-width: 900px;
     margin: 50px auto;
     padding: 0 30px;
 }
 
-.pagina-veiculo h1{
+.pagina-veiculo h1 {
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 40px;
-    color: #222;
-    margin-bottom: 10px;
+    color: white;
+    margin-bottom: 30px;
+
+    text-shadow: 2px 2px 5px black;
 }
 
-.veiculo{
-    background-color: white;
+.veiculo {
+    background-color: rgba(255, 255, 255, 0.75);
+
     padding: 25px;
+
     margin-bottom: 20px;
 
     border-radius: 10px;
 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.veiculo img{
+.veiculo img {
     width: 200px;
     height: auto;
 }
 
-.veiculo h2{
+.veiculo h2 {
     margin-top: 0;
 
     font-family: Arial, sans-serif;
+
     color: #222;
+}
+
+/* =========================================
+   PÁGINA SOBRE NÓS
+   ========================================= */
+
+
+/* HISTÓRIA */
+
+.historia {
+
+    min-height: 550px;
+
+    background-image: url("fundo-sobre.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 50px;
+
+    box-sizing: border-box;
+}
+
+
+.texto-historia {
+
+    max-width: 500px;
+
+    color: white;
+
+    text-shadow: 2px 2px 5px black;
+
+}
+
+
+.texto-historia h1 {
+
+    font-size: 50px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.texto-historia h1 span {
+
+    display: block;
+
+    color: #d4af37;
+
+}
+
+
+.texto-historia p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: white;
+
+}
+
+
+/* =========================================
+   MISSÃO, VISÃO E VALORES
+   ========================================= */
+
+.informacoes {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 50px 30px;
+
+    background-color: #111;
+
+}
+
+
+.info {
+
+    width: 300px;
+
+    padding: 25px;
+
+    background-color: #1c1c1c;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+}
+
+
+.info h2 {
+
+    color: #d4af37;
+
+    margin-top: 0;
+
+}
+
+
+.info p {
+
+    color: white;
+
+    line-height: 1.6;
+
+}
+
+
+.info ul {
+
+    text-align: left;
+
+    color: white;
+
+    line-height: 2;
+
+}
+
+
+
+/* =========================================
+   OPINIÃO
+   ========================================= */
+
+.opiniao {
+
+    display: flex;
+
+    gap: 50px;
+
+    justify-content: center;
+
+    padding: 60px 40px;
+
+    background-color: #f2f2f2;
+
+    box-sizing: border-box;
+
+}
+
+
+.texto-opiniao {
+
+    width: 400px;
+
+}
+
+
+.texto-opiniao h2 {
+
+    font-size: 35px;
+
+    color: #222;
+
+}
+
+
+.texto-opiniao h2 span {
+
+    display: block;
+
+    color: #d4af37;
+
+}
+
+
+.texto-opiniao p {
+
+    color: #555;
+
+    line-height: 1.6;
+
+}
+
+
+/* FORMULÁRIO */
+
+.opiniao form {
+
+    width: 500px;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.opiniao label {
+
+    margin-top: 12px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+    color: #222;
+
+}
+
+
+.opiniao input,
+.opiniao select,
+.opiniao textarea {
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    box-sizing: border-box;
+
+}
+
+
+.opiniao textarea {
+
+    height: 130px;
+
+    resize: vertical;
+
+}
+
+
+.opiniao button {
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    background-color: #111;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+.opiniao button:hover {
+
+    background-color: #d4af37;
+
+    color: #111;
+
+}
+
+
+/* =========================================
+   RODAPÉ
+   ========================================= */
+
+footer {
+
+    background-color: #111;
+
+    color: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+}
+
+
+.footer-logo img {
+
+    width: 120px;
+
+}
+
+
+footer p {
+
+    font-size: 14px;
+
+}
+
+
+.copyright {
+
+    margin-top: 30px;
+
+    border-top: 1px solid #444;
+
+    padding-top: 20px;
+
 }
