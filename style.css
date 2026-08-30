@@ -68,7 +68,7 @@
 }
 
 .botao:hover {
-    background-color: white;
+    background-color: rgb(214, 169, 45);
 }
 
 
@@ -177,14 +177,14 @@ footer p {
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 40px;
-    color: #222;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .subtitulo {
     text-align: center;
     font-family: Arial, sans-serif;
-    color: #666;
+    color: #ffffff;
     margin-bottom: 40px;
 }
 
@@ -210,7 +210,7 @@ footer p {
 
 .contato-card p {
     font-family: Arial, sans-serif;
-    color: #555;
+    color: #cccccc;
     line-height: 1.6;
 }
 
