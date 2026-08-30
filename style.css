@@ -1,3 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 .inicio {
     height: calc(100vh - 80px);
 
@@ -89,12 +102,13 @@ footer p {
 }
 
 header {
-    height: 100px;
-    background-color: #ffffff;
+    min-height: 100px;
+    background-color: #111;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 15px 5%;
+    gap: 30px;
 }
 
 .logo img {
@@ -106,10 +120,11 @@ header {
 nav {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 nav a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -271,9 +286,12 @@ body {
 }
 
 .pagina-veiculo{
-    max-width: 900px;
+    width: 100%;
+    max-width: 1200px;
+
     margin: 50px auto;
-    padding: 0 30px;
+
+    padding: 0 5%;
 }
 
 .pagina-veiculo h1 {
@@ -299,8 +317,11 @@ body {
 }
 
 .veiculo img {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: auto;
+    display: center;
+    margin: 0 auto;
 }
 
 .veiculo h2 {
@@ -453,8 +474,9 @@ body {
     gap: 50px;
 
     justify-content: center;
+    align-items: center;
 
-    padding: 60px 40px;
+    padding: 60px 5%;
 
     background-color: #f2f2f2;
 
@@ -464,9 +486,9 @@ body {
 
 
 .texto-opiniao {
+    flex: 1;
 
-    width: 400px;
-
+    max-width: 500px;
 }
 
 
@@ -500,8 +522,9 @@ body {
 /* FORMULÁRIO */
 
 .opiniao form {
+    flex: 1;
 
-    width: 500px;
+    max-width: 500px;
 
     display: flex;
 
@@ -621,5 +644,80 @@ footer p {
     border-top: 1px solid #444;
 
     padding-top: 20px;
+
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .pagina-veiculo {
+        margin: 30px auto;
+
+        padding: 0 20px;
+    }
+
+    .pagina-veiculo h1 {
+        font-size: 32px;
+    }
+
+    .opiniao {
+        flex-direction: column;
+
+        padding: 40px 20px;
+    }
+
+    .texto-opiniao,
+    .opiniao form {
+        width: 100%;
+
+        max-width: 500px;
+    }
+
+    .informacoes {
+        flex-direction: column;
+
+        align-items: center;
+
+        padding: 40px 20px;
+    }
+
+    .info {
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .pagina-veiculo h1 {
+        font-size: 28px;
+    }
+
+    .veiculo {
+        padding: 20px;
+    }
 
 }
