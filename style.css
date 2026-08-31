@@ -8,11 +8,12 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #111;
 }
 
 .inicio {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
 
     background-image:
         linear-gradient(
@@ -49,7 +50,7 @@ body {
 
     margin: 0;
 
-    font-weight: bold;
+    font-weight: 800;
 }
 
 
@@ -78,28 +79,18 @@ body {
     border-radius: 5px;
 
     font-weight: bold;
+
+    margin-top: 20px;
+
+    transition: background-color 0.3s;
 }
 
 .botao:hover {
-    background-color: rgb(214, 169, 45);
+    background-color: #b8952e;
 }
 
 
-/* RODAPÉ */
-
-footer {
-    background-color: #111;
-
-    text-align: center;
-
-    padding: 15px;
-}
-
-footer p {
-    margin: 0;
-
-    font-size: 14px;
-}
+/* CABEÇALHO */
 
 header {
     min-height: 100px;
@@ -126,56 +117,18 @@ nav {
 nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-family: Arial, sans-serif;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav a:hover {
     color: #d4af37;
 }
 
-.title {
-    text-align: center;
-    margin-top: 50px;
-    font-family: Arial, sans-serif;
-    font-size: 36px;
-    color: #333;
-}
-
-.imagem-principal { 
-width: 300px; 
-margin: 30px; 
-}
-
-.botao {
-    display: inline-block;
-    background-color: #111;
-    color: white;
-    text-decoration: none;
-    padding: 12px 25px;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: white;
-    color: rgb(0, 0, 0);
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-}
-
-#copyright {
-    text-align: center;
-    margin-top: 50px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #000000;
+nav a.pagina-atual {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 4px;
 }
 
 /* ============================= */
@@ -190,7 +143,6 @@ footer p {
 
 .pagina-contato h1 {
     text-align: center;
-    font-family: Arial, sans-serif;
     font-size: 40px;
     color: #ffffff;
     margin-bottom: 10px;
@@ -198,7 +150,6 @@ footer p {
 
 .subtitulo {
     text-align: center;
-    font-family: Arial, sans-serif;
     color: #ffffff;
     margin-bottom: 40px;
 }
@@ -218,13 +169,10 @@ footer p {
 
 .contato-card h2 {
     margin-top: 0;
-
-    font-family: Arial, sans-serif;
     color: #ffffff;
 }
 
 .contato-card p {
-    font-family: Arial, sans-serif;
     color: #cccccc;
     line-height: 1.6;
 }
@@ -271,9 +219,7 @@ footer p {
 /* PÁGINA DE VEÍCULOS            */
 /* ============================= */
 
-body {
-    margin: 0;
-
+.fundo-veiculos {
     background-image: url("fundo-veiculos.png");
 
     background-size: cover;
@@ -296,7 +242,6 @@ body {
 
 .pagina-veiculo h1 {
     text-align: center;
-    font-family: Arial, sans-serif;
     font-size: 40px;
     color: white;
     margin-bottom: 30px;
@@ -304,32 +249,57 @@ body {
     text-shadow: 2px 2px 5px black;
 }
 
+.pagina-veiculo > p {
+    text-align: center;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.veiculos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
 .veiculo {
     background-color: rgba(255, 255, 255, 0.75);
 
     padding: 25px;
 
-    margin-bottom: 20px;
-
     border-radius: 10px;
 
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.veiculo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .veiculo img {
     width: 100%;
     max-width: 200px;
     height: auto;
-    display: center;
+    display: block;
     margin: 0 auto;
 }
 
 .veiculo h2 {
     margin-top: 0;
 
-    font-family: Arial, sans-serif;
-
     color: #222;
+}
+
+.veiculo .botao {
+    margin-top: auto;
 }
 
 /* =========================================
@@ -556,7 +526,7 @@ body {
 
     border-radius: 5px;
 
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
 
     font-size: 15px;
 
@@ -588,11 +558,15 @@ body {
 
     border-radius: 5px;
 
+    font-family: 'Montserrat', Arial, sans-serif;
+
     font-weight: bold;
 
     font-size: 16px;
 
     cursor: pointer;
+
+    transition: background-color 0.3s;
 
 }
 
@@ -636,6 +610,15 @@ footer p {
 
 }
 
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 .copyright {
 
@@ -659,6 +642,19 @@ footer p {
         justify-content: center;
 
         gap: 15px;
+    }
+
+    .conteudo h1 {
+        font-size: 42px;
+    }
+
+    .conteudo p {
+        font-size: 18px;
+    }
+
+    .historia {
+        padding: 30px;
+        min-height: 450px;
     }
 
     .pagina-veiculo {
@@ -710,6 +706,14 @@ footer p {
 
     .logo img {
         width: 100px;
+    }
+
+    .conteudo h1 {
+        font-size: 32px;
+    }
+
+    .historia {
+        padding: 20px;
     }
 
     .pagina-veiculo h1 {
