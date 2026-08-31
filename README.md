@@ -2,7 +2,7 @@
 
 ## 👥 Autores
 
-- Gabriel Galvão
+- Gabriel Galvão e Gregory
 
 ## 📌 Tema escolhido
 
