@@ -725,3 +725,274 @@ footer a:hover {
     }
 
 }
+
+
+/* =========================================
+   AJUSTES PARA O JAVASCRIPT
+   ========================================= */
+
+/* Faz o atributo hidden esconder o elemento */
+[hidden] {
+    display: none !important;
+}
+
+/* Veículos: campo de busca */
+.filtros {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.filtros label {
+    display: block;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.filtros input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.pagina-veiculo > .aviso {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Sobre: mensagem de erro do formulário */
+.opiniao .erro {
+    color: #c0392b;
+    font-weight: 600;
+    margin: 12px 0 0;
+}
+
+.opiniao .sucesso {
+    color: #1e8449;
+    font-weight: 600;
+    margin: 12px 0 0;
+}
+
+/* Veículos: busca e filtro de preço lado a lado */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filtro-campo {
+    flex: 1;
+    min-width: 220px;
+}
+
+.filtros select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* Botão "Limpar escolha" */
+.botao-limpar {
+    margin-left: 10px;
+    padding: 6px 12px;
+    background: transparent;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.botao-limpar:hover {
+    background-color: #d4af37;
+    color: #111;
+}
+
+/* Sobre: campo com erro fica com borda vermelha */
+.invalido {
+    border: 2px solid #c0392b !important;
+}
+
+
+/* =========================================
+   MELHORIAS VISUAIS
+   (bloco no fim do arquivo: para desfazer, basta apagá-lo)
+   ========================================= */
+
+/* ---------- Foco visível (teclado) ---------- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #d4af37;
+    outline-offset: 2px;
+}
+
+
+/* ---------- Veículos: cards escuros ---------- */
+.veiculo {
+    background-color: rgba(28, 28, 28, 0.92);
+    border: 1px solid #2e2e2e;
+    color: #eae6dc;
+}
+
+.veiculo:hover {
+    border-color: #d4af37;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Todas as fotos com o mesmo tamanho de área */
+.veiculo img {
+    max-width: none;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.veiculo h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Linhas de informação mais juntas */
+.veiculo p {
+    margin: 4px 0;
+    color: #cfcabd;
+}
+
+.veiculo h3 {
+    color: #d4af37;
+    font-size: 26px;
+    margin: 14px 0 18px;
+}
+
+
+/* ---------- Veículos: faixas de aviso ---------- */
+.pagina-veiculo > .aviso {
+    background-color: rgba(17, 17, 17, 0.92);
+    border-left: 4px solid #d4af37;
+    border-radius: 6px;
+    padding: 12px 16px;
+}
+
+#interesse-salvo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.botao-limpar {
+    margin-left: 0;
+}
+
+
+/* ---------- Sobre: formulário escuro ---------- */
+.opiniao {
+    background-color: #111;
+}
+
+.texto-opiniao h2 {
+    color: #fff;
+}
+
+.texto-opiniao p {
+    color: #cfcabd;
+}
+
+.opiniao label {
+    color: #eae6dc;
+}
+
+.opiniao input,
+.opiniao select,
+.opiniao textarea {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: 1px solid #3a3a3a;
+}
+
+.opiniao input::placeholder,
+.opiniao textarea::placeholder {
+    color: #8d887c;
+}
+
+.opiniao input:focus,
+.opiniao select:focus,
+.opiniao textarea:focus {
+    border-color: #d4af37;
+}
+
+.opiniao button {
+    background-color: #d4af37;
+    color: #111;
+}
+
+.opiniao button:hover {
+    background-color: #b8952e;
+    color: #111;
+}
+
+
+/* ---------- Sobre: mensagens de erro e sucesso ---------- */
+.opiniao .erro:not(:empty) {
+    background-color: rgba(192, 57, 43, 0.18);
+    border-left: 4px solid #e74c3c;
+    border-radius: 6px;
+    color: #ff9d90;
+    padding: 10px 14px;
+}
+
+.opiniao .erro:not(:empty)::before {
+    content: "⚠ ";
+}
+
+.opiniao .sucesso {
+    background-color: rgba(30, 132, 73, 0.2);
+    border-left: 4px solid #2ecc71;
+    border-radius: 6px;
+    color: #7be0a4;
+    padding: 10px 14px;
+}
+
+.opiniao .sucesso::before {
+    content: "✔ ";
+}
+
+
+/* ---------- Menu no celular: uma linha, centralizado ---------- */
+@media (max-width: 480px) {
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+    }
+
+}
+
+
+/* Campos preenchidos automaticamente pelo navegador (Edge/Chrome):
+   mantém o fundo escuro e o texto branco, em vez do fundo azulado padrão */
+.opiniao input:-webkit-autofill,
+.opiniao input:-webkit-autofill:hover,
+.opiniao input:-webkit-autofill:focus,
+.opiniao textarea:-webkit-autofill,
+.opiniao select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #1c1c1c inset;
+    -webkit-text-fill-color: #fff;
+    caret-color: #fff;
+    transition: background-color 9999s ease-out 0s;
+}

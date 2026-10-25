@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Confira os veículos disponíveis na GP Motors: Toyota Corolla, Honda Civic e Jeep Compass.">
+    <meta name="description" content="Confira os veículos disponíveis na GP Motors: Toyota Corolla, Honda Civic Type R e Jeep Compass.">
     <title>GP Motors - Veículos</title>
 
     <link rel="stylesheet" href="style.css">
@@ -59,10 +59,38 @@
             na GP Motors
         </p>
 
+        <!-- Busca e filtro (controlados pelo script.js) -->
+        <section class="filtros">
+
+            <div class="filtro-campo">
+                <label for="busca">Buscar veículo</label>
+                <input type="text" id="busca" placeholder="Ex.: Civic">
+            </div>
+
+            <div class="filtro-campo">
+                <label for="preco">Preço máximo</label>
+                <select id="preco">
+                    <option value="0">Todos os preços</option>
+                    <option value="150000">Até R$ 150 mil</option>
+                    <option value="140000">Até R$ 140 mil</option>
+                </select>
+            </div>
+
+        </section>
+
+        <p id="sem-resultados" class="aviso" role="status" hidden>
+            Nenhum veículo encontrado.
+        </p>
+
+        <div id="interesse-salvo" class="aviso" role="status" hidden>
+            <span id="interesse-texto"></span>
+            <button type="button" id="limpar-interesse" class="botao-limpar">Limpar escolha</button>
+        </div>
+
         <div class="veiculos-grid">
 
             <!--Veículo 1-->
-            <div class="veiculo">
+            <div class="veiculo" data-nome="Toyota Corolla" data-preco="145900">
 
                 <img src="ToyotaCorolla.png" alt="Toyota Corolla">
                 <h2>Toyota Corolla</h2>
@@ -74,10 +102,10 @@
             </div>
 
             <!--Veículo 2-->
-            <div class="veiculo">
+            <div class="veiculo" data-nome="Honda Civic Type R" data-preco="139900">
 
-                <img src="HONDA.png" alt="Honda Civic">
-                <h2>Honda Civic</h2>
+                <img src="HONDA.png" alt="Honda Civic Type R">
+                <h2>Honda Civic Type R</h2>
                 <p>Ano: 2023</p>
                 <p>Câmbio: Automático</p>
                 <p>Combustível: Flex</p>
@@ -86,7 +114,7 @@
             </div>
 
             <!--Veículo 3-->
-            <div class="veiculo">
+            <div class="veiculo" data-nome="Jeep Compass" data-preco="169900">
 
                 <img src="JEEP.webp" alt="Jeep Compass">
                 <h2>Jeep Compass</h2>
@@ -148,6 +176,9 @@
 
     </footer>
 
+
+
+    <script src="script.js"></script>
 
 </body>
 

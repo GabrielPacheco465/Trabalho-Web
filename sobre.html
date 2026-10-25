@@ -159,7 +159,7 @@
 
 
 
-            <form>
+            <form id="form-opiniao" novalidate>
 
                 <label for="nome">Nome</label>
 
@@ -220,9 +220,13 @@
                 ></textarea>
 
 
+                <p class="erro" id="erro-form" role="alert"></p>
+
                 <button type="submit">
                     Enviar opinião
                 </button>
+
+                <p class="sucesso" id="sucesso" role="status" hidden></p>
 
             </form>
 
@@ -280,6 +284,9 @@
 
     </footer>
 
+
+
+    <script src="script.js"></script>
 
 </body>
 
